@@ -68,13 +68,15 @@ class Window2 extends JFrame implements ActionListener {
         g2.setPaint(gradient);
         g2.fillPolygon(catPolygon);
 
-        g.setColor(new Color(255, 255, 255));
-        g.fillOval(startX + 120, centerY + eyeSize - 30, eyeSize, eyeSize);
-        g.fillOval(startX + 160, centerY + eyeSize - 30  , eyeSize, eyeSize);
+        g2.setColor(new Color(255, 255, 255));
+        g2.fillOval(startX + 120, centerY + eyeSize - 30, eyeSize, eyeSize);
+        g2.fillOval(startX + 160, centerY + eyeSize - 30  , eyeSize, eyeSize);
 
-        g.setColor(new Color(0, 22, 129));
-        g.fillOval(startX + 135, centerY + eyeSize - 25, eyeSize-30, eyeSize-2);
-        g.fillOval(startX + 175, centerY + eyeSize - 25  , eyeSize-30, eyeSize-2);
+        g2.setColor(new Color(0, 22, 129));
+        g2.fillOval(startX + 135, centerY + eyeSize - 25, eyeSize-30, eyeSize-2);
+        g2.fillOval(startX + 175, centerY + eyeSize - 25  , eyeSize-30, eyeSize-2);
+
+
     }
 
     @Override
@@ -102,16 +104,6 @@ class Window2 extends JFrame implements ActionListener {
         g2d.setColor(Color.GREEN);
         g2d.fillOval(ticksFromStart, BACKGROUND_HEIGHT / 2, BACKGROUND_WIDTH / 10, BACKGROUND_WIDTH / 10);
 
-//        Polygon polygon = new Polygon();
-//        polygon.addPoint(30,240);
-//        polygon.addPoint(500,210);
-//        polygon.addPoint(500,250);
-//        polygon.addPoint(500,220);
-//        polygon.addPoint(580,260);
-//        polygon.addPoint(500,250);
-//        polygon.addPoint(500,280);
-//
-//        g.fillPolygon(polygon);
     }
 }
 
