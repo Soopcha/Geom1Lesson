@@ -25,7 +25,7 @@ public class DrawPanel extends JPanel implements ActionListener {
         Color color = new Color(246, 178, 178);
         this.catCute = new CatCute(ticksFromStart, 200, 200, 260, color);
     }
-    public void drawView(final Graphics gr){ // рисовка вида
+    public void drawView(final Graphics gr){ // рисовка вида (что сзади кота)
         Graphics2D g = (Graphics2D) gr;
         g.setColor(new Color(32, 51, 38));
         g.fillRect(0,0,1300,1300);
@@ -39,6 +39,14 @@ public class DrawPanel extends JPanel implements ActionListener {
 
         g.setPaint(gradient); //установили цвет
         g.fillRect(0,0,1300,300);// а теперь этим цветом красим
+
+        String text = "THE CAT";
+
+
+        g.setColor(new Color(185, 147, 147)); // установите цвет текста
+        g.setFont(new Font("Verdana", Font.BOLD + Font.ITALIC, 44)); // настройте шрифт и размер текста
+        g.drawString(text, 500, 500); // нарисуйте текст на указанных координатах
+
     }
 
     @Override

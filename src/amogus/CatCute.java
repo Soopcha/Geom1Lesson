@@ -107,7 +107,7 @@ public class CatCute {
 
         GradientPaint gradient = new
                 GradientPaint((int)(this.x + 0.37 * this.width), (int)(this.y + 0.12 * this.height),
-                new Color(1, 0, 16),
+                new Color(14, 8, 131),
                 (int)(this.x + 0.37 * this.width), (int)(this.y + 0.32 * this.height),
                 new Color(255, 0, 59));
 
