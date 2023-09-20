@@ -2,7 +2,7 @@ package amogus;
 
 import javax.swing.*;
 
-public class MainAmogus {
+public class MainCatCute {
     public static void main(String[] args) {
         MainWindow window = new MainWindow();
         window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);

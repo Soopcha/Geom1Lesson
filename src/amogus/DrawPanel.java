@@ -13,7 +13,7 @@ public class DrawPanel extends JPanel implements ActionListener {
     private Timer timer;
     private int ticksFromStart = 0;
 
-    private CatCute amogus;
+    private CatCute catCute;
 
     public DrawPanel(final int width, final int height, final int timerDelay) {
         this.PANEL_WIDTH = width;
@@ -23,14 +23,31 @@ public class DrawPanel extends JPanel implements ActionListener {
         timer.start();
 
         Color color = new Color(246, 178, 178);
-        this.amogus = new CatCute(ticksFromStart, 200, 200, 260, color);
+        this.catCute = new CatCute(ticksFromStart, 200, 200, 260, color);
+    }
+    public void drawView(final Graphics gr){ // рисовка вида
+        Graphics2D g = (Graphics2D) gr;
+        g.setColor(new Color(32, 51, 38));
+        g.fillRect(0,0,1300,1300);
+
+        GradientPaint gradient = new
+                GradientPaint(0,0,
+                new Color(1, 0, 16),
+                0, 300,
+                new Color(255, 0, 59));
+
+
+        g.setPaint(gradient); //установили цвет
+        g.fillRect(0,0,1300,300);// а теперь этим цветом красим
     }
 
     @Override
     public void paint(final Graphics gr) {
         super.paint(gr);
-        amogus.setX(ticksFromStart);
-        amogus.draw(gr);
+        drawView(gr);
+
+        catCute.setX(ticksFromStart);
+        catCute.draw(gr);
     }
 
     @Override
