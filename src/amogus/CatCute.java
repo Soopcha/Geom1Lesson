@@ -86,6 +86,12 @@ public class CatCute {
         g.setColor(Color.BLACK);
         g.drawOval((int)(this.x + 0.2 * this.width), this.y, (int)(0.65 * this.width), (int)(0.33 * this.height));
 
+        //усы
+        g.drawLine((int)(this.x + 0.3 * this.width), (int)(this.y+this.width*0.25), (int)(this.x - 0.05 * this.width), (int)(this.y+this.width*0.2));
+        g.drawLine((int)(this.x + 0.3 * this.width), (int)(this.y+this.width*0.30), (int)(this.x - 0.05 * this.width), (int)(this.y+this.width*0.3));
+        g.drawLine((int)(this.x + 0.7 * this.width), (int)(this.y+this.width*0.25), (int)(this.x + 1.05 * this.width), (int)(this.y+this.width*0.2));
+        g.drawLine((int)(this.x + 0.7 * this.width), (int)(this.y+this.width*0.30), (int)(this.x + 1.05 * this.width), (int)(this.y+this.width*0.3));
+
         //g.drawOval(this.x, (int)(this.y + 0.25 * this.height), (int)(0.65 * this.width), (int)(0.33 * this.height));
 
 
