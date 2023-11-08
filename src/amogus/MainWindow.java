@@ -8,6 +8,9 @@ public class MainWindow extends JFrame {
 
     public MainWindow() throws HeadlessException {
         panel = new DrawPanel(this.getWidth(), this.getHeight(), 100);
+        //полотно DrawingPanel теперь является не самим
+        //окошком, а виджетом на нем, что позволит легко докидывать кнопочки, меню и
+        //другие элементы в будущем
         this.add(panel);
     }
 }
